@@ -1,0 +1,355 @@
+// Color variables (appears count calculates by raw css)
+@import "colors";
+@import (css) "../css/sizes.css";
+
+// Bootswatch overridings - START
+
+.btn-primary {
+  background-color: @primary-color;
+
+	&:hover {
+		background-color: @dark-primary-color;
+		border-color: rgba(0,0,0,0);
+	}
+	&:active {
+		background-color: @dark-primary-color;
+		background-image: -o-radial-gradient(circle, @dark-primary-color 10%, @primary-color 11%);
+		background-image: -webkit-radial-gradient(circle, @dark-primary-color 10%, @primary-color 11%);
+		background-image: radial-gradient(circle, @dark-primary-color 10%, @primary-color 11%);
+		hover {
+			background-color: @dark-primary-color;
+		}
+	}
+  &:focus {
+		background-color:  @dark-primary-color;
+	}
+  .focus {
+   background-color:  @dark-primary-color;
+  }
+}
+
+// Bootswatch overridings - END
+
+.medium-bordered {
+  margin: 15px 0px 15px 0px;
+}
+
+.button {
+  border-radius: 0px;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.panel {
+  border-radius: 0px;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+.margin-top-10 {
+  margin-top: 10px !important;
+}
+
+.font-size-h2 {
+  font-size: 30px;
+}
+
+.small-left-separation {
+  margin-left: 10px;
+}
+
+.accent-color {
+  color: @accent-color;
+}
+
+.primary-color {
+  color: @primary-color;
+}
+
+.background-color-pink {
+  background-color: @accent-color !important;
+}
+
+.background-color-blue-1 {
+  background-color: @primary-color !important;
+}
+
+.background-color-blue-3 {
+  background-color: @primary-color;
+}
+
+.color-blue-1 {
+  color: @primary-color;
+}
+
+.color-green {
+  color: green;
+}
+
+.color-red {
+  color: red;
+}
+
+p, a, h1, h2, h3, h4, h5 {
+  word-wrap: break-word;
+}
+
+.btn-info {
+  background-color: @accent-color;
+  &:hover {
+    background-color: @dark-accent-color;
+  }
+  &:active {
+    -webkit-background-size: 1000% 1000%;
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    background-color: @dark-accent-color;
+    background-image: -o-radial-gradient(circle, @dark-accent-color 10%, @accent-color 11%);
+    background-image: -webkit-radial-gradient(circle, @dark-accent-color 10%, @accent-color 11%);
+    background-image: radial-gradient(circle, @dark-accent-color 10%, @accent-color 11%);
+    background-repeat: no-repeat;
+    background-size: 1000%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    &:hover {
+      background-color: @dark-accent-color;
+    }
+  }
+  &:focus {
+    background-color: @accent-color;
+  }
+}
+
+.alert-info {
+  background-color: @accent-color;
+}
+
+.text-info {
+  color: @accent-color;
+}
+
+.medium-left-separation {
+  margin-left: 20px;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0px !important;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.link-color-inverse {
+  color: @primary-color;
+  &:hover {
+    color: @dark-primary-color;
+  }
+}
+
+.link-color {
+  color: @white !important;
+  &:hover {
+    color: @gray-300 !important;
+  }
+  &:focus {
+    color: @gray-300 !important;
+  }
+}
+
+.link-no-decoration {
+  text-decoration: none !important;
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.color-white {
+  color: @white;
+}
+
+.navbar-inverse {
+  .navbar-collapse {
+    border-color: @primary-color;
+  }
+  .navbar-form {
+    border-color: @primary-color;
+  }
+  .navbar-toggle {
+    .icon-bar {
+      background-color: @white;
+    }
+  }
+}
+
+.display-md-inline {
+  display: inline !important;
+}
+
+.inline {
+  display: inline !important;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.light-border {
+  border: 1px solid #dddddd;
+}
+
+.no-border-radius {
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+}
+
+.scrollable {
+  height: 400px;
+  overflow: scroll;
+}
+
+.height250 {
+  height: 250px !important;
+}
+
+.background-color-light-gray {
+  background-color: @light-gray-angular2;
+}
+
+.width-auto {
+  width: auto !important;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.valign-baseline {
+  vertical-align: baseline !important;
+}
+
+.app-modal-location-form {
+  section {
+    min-height: 450px;
+    .form-height {
+      min-height: 367px;
+    }
+    .scrollable {
+      height: 367px;
+      min-height: 367px;
+    }
+  }
+}
+
+.md-datepicker-calendar-pane {
+  z-index: 1051;
+}
+
+._md-select-menu-container._md-active._md-clickable {
+  z-index: 1051;
+}
+
+.md-bordered {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.md-input {
+  border-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+md-input-container.md-input-invalid .md-input {
+  border-color: rgb(221, 44, 0) !important;
+}
+
+md-input-container.md-default-theme:not(.md-input-invalid).md-input-focused .md-input, md-input-container:not(.md-input-invalid).md-input-focused .md-input, md-input-container.md-default-theme:not(.md-input-invalid).md-input-resized .md-input, md-input-container:not(.md-input-invalid).md-input-resized .md-input {
+  border-color: rgb(63, 81, 181) !important;
+}
+
+.text-danger {
+  color: #e51c23 !important;
+}
+//
+// body {
+//   top: 0px !important;
+// }
+
+.background-list-item-disable {
+  background-color: @red-50;
+}
+
+md-icon {
+  color: @accent-color !important;
+}
+
+md-select-menu {
+  md-content {
+    md-option[selected] {
+      color: @accent-color !important;
+    }
+  }
+}
+
+md-select {
+  &:not([disabled]) {
+    &:focus {
+      ._md-select-value {
+        border-bottom-color: @accent-color !important;
+      }
+    }
+  }
+}
+
+md-input-container:not(.md-input-invalid).md-input-focused {
+  label {
+    color: @accent-color !important;
+  }
+  .md-input {
+    border-color: @accent-color !important;
+  }
+}
+
+md-radio-group:not([disabled]).md-primary .md-checked ._md-off {
+  border-color: @accent-color !important;
+}
+
+md-radio-group:not([disabled]).md-primary ._md-on {
+  background-color: @accent-color !important;
+}
+
+.bg-dark-primary-color {
+  background-color: @dark-primary-color !important;
+}
+
+.md-virtual-repeat-container.md-autocomplete-suggestions-container {
+  z-index: 1051 !important;
+  width: 400px;
+}
+
+.md-chips {
+  ._md-chip-input-container {
+    width: 100% !important;
+  }
+}
+
+.md-chips ._md-chip-input-container {
+  width: 100% !important;
+}
+
+md-chips {
+  width: 100%;
+  input {
+    width: 100%;
+  }
+}
+
+md-chips .md-chips.md-focused {
+  box-shadow: 0 2px @accent-color;
+}
+
+md-input-container .md-errors-spacer {
+  display: none;
+}
